@@ -11,7 +11,7 @@ const urlController = (req, res, next) => {
       return res.status(404).json({error: error.message})
     }
 
-    if (!url.includes('//opendata.euskadi.eus') || !url.endsWith('.json')) {
+    if (!url.includes('opendata.euskadi.eus') || !url.endsWith('json')) {
       return res.status(404).json({error: 'Not valid URL'})
     }
 
