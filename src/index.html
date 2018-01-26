@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    *, *:before, *:after {
+      box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:lightblue;
+    }
+    .main {
+      width: 80%;
+      max-width: 500px;
+      padding: 4rem;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 140, 255, 0.315)
+    }
+
+    .label {
+      display: block;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      line-height: 2rem;
+      text-align: center;
+      font-family: sans-serif;
+    }
+
+    .label span {
+      display: block;
+      font-size: 1.2rem;
+    }
+
+    .input {
+      width: 100%;
+      height: 2rem;
+      border-radius: 2px;
+      border: 1px solid rgb(37, 69, 80);
+      padding: 0 1rem;
+      color: black;
+      outline: none;
+    }
+  </style>
+  <title>Open data proxy</title>
+</head>
+<body>
+  <main class="main">
+    <label for="input" class="label">Open data euskadi <span>lortu balizko JSONa</span></label>
+    <input type="text" id="input" class="input" placeholder="Sartu JSON fitxategiaren helbidea">
+    <p>... eta segituan jasoko duzu</p>
+  </main>
+  <script>
+    ((c, d) => {
+      const ENTER_KEY = 13
+      const input = d.querySelector('#input')
+      const button = d.querySelector('#button')
+
+      const createUrl = value => `${d.URL}opendata/${btoa(value)}`
+
+      const handleSubmit = e => {
+        if (e.keyCode === ENTER_KEY) {
+          let value = input.value
+          if (value.trim()) {
+            let url = createUrl(value.trim())
+            window.location = url
+          }
+        }
+      }
+
+      input.value = null
+      input.addEventListener('keyup', handleSubmit)
+    })(console.log, document)
+  </script>
+</body>
+</html>
