@@ -2,6 +2,8 @@
 
 http://opendata.euskadi.eus webgunean euskadiko hainbat datu ireki eskeintzen dira, baina JSON formatuan dauden datuak eskuratu nahi direnean, fitxategia ez dago balizko formatu batean.
 
+![Ez da balizko JSON formatua](/src/images/error.png)
+
 Honek datu hoietan oinarrituta dauden aplikazio berriak sortzeko orduan arazo bat suposatzen du.
 
 Hau dela eta aplikazio honen helburua, balizko JSON fitxategira daraman esteka lortzen laguntzea da.
