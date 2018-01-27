@@ -1,3 +1,4 @@
+const compression = require('compression')
 const express = require('express')
 const path = require('path')
 const routes = require('./src/app/routes')
@@ -10,6 +11,7 @@ app
   .set('env', env)
   .set('port', port)
   .set('projectDir', projectDir)
+  .use(compression())
   .use((req, res, next) => {
     res.removeHeader('X-Powered-By')
     next()
