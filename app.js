@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 const routes = require('./src/app/routes')
-const env = 'development'
+const env = process.env.NODE_ENV || 'development'
 const projectDir = path.join(__dirname)
 const port = process.env.PORT || 3000
 const app = express()

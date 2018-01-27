@@ -8,6 +8,10 @@ Honek datu hoietan oinarrituta dauden aplikazio berriak sortzeko orduan arazo ba
 
 Hau dela eta aplikazio honen helburua, balizko JSON fitxategira daraman esteka lortzen laguntzea da.
 
+## Aplikazioaren esteka
+
+Aplikazioa heroku plataforman dago erabilgarri http://opendata-euskadi.herokuapp.com/
+
 ## Instalazioa
 
 Zure ordenagailuan instalatzeko, momentuko [Node.js](https://nodejs.org) bertsio berriena edo gutxienez 9.4.0-duna eduki behar da.
@@ -27,9 +31,3 @@ http://opendata.euskadi.eus webgunetik `geojson` edo `json` formatuan dagoen fit
 Segituan balizko formatua duen fitxategi bat agertuko da. Fitxategi horren esteka erabili dezakegu garatuko dugun aplikazioetan erabiltzeko.
 
 ![jasotako json datuak](src/images/json-firefox.png)
-
-## Oharra
-
-Aplikazio hau [heroku](https://www.heroku.com/) plataformara igotzeko asmoa daukat laister jarriko dut esteka bat eskuragarri.
-
-Ordurarte ondo izan 👋 😊
