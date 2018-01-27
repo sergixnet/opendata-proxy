@@ -1,12 +1,12 @@
 # Opendata euskadi proxy
 
-http://opendata.euskadi.eus webgunean euskadiko hainbat datu ireki eskeintzen dira, baina JSON formatuan dauden datuak eskuratu nahi direnean, fitxategia ez dago balizko formatu batean.
+http://opendata.euskadi.eus webgunean euskadiko hainbat datu ireki eskeintzen dira, baina JSON formatuan dauden datuak eskuratu nahi direnean, fitxategia ez dago formatu egoki batean.
 
-![Ez da balizko JSON formatua](/src/images/error.png)
+![Ez da json formatu egokia](/src/images/error.png)
 
 Honek datu hoietan oinarrituta dauden aplikazio berriak sortzeko orduan arazo bat suposatzen du.
 
-Hau dela eta aplikazio honen helburua, balizko JSON fitxategira daraman esteka lortzen laguntzea da.
+Hau dela eta aplikazio honen helburua, Opendata euskadiko JSON fitxategiak formatu egoki batera bihurtzea da, bihurtutako fitxategiaren esteka eskeiniz.
 
 ## Aplikazioaren esteka
 
@@ -28,6 +28,6 @@ http://opendata.euskadi.eus webgunetik `geojson` edo `json` formatuan dagoen fit
 
 ![Opendata webgunea](src/images/opendata.png)
 
-Segituan balizko formatua duen fitxategi bat agertuko da. Fitxategi horren esteka erabili dezakegu garatuko dugun aplikazioetan erabiltzeko.
+Segituan formatu egokia duen fitxategi bat agertuko da. Fitxategi horren esteka erabili dezakegu garatuko dugun aplikazioetan erabiltzeko.
 
 ![jasotako json datuak](src/images/json-firefox.png)
