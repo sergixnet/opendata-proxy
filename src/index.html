@@ -8,13 +8,18 @@
     *, *:before, *:after {
       box-sizing: border-box;
     }
+
     body {
       height: 100vh;
+      display: -webkit-box;
       display: flex;
+      -webkit-box-pack: center;
       justify-content: center;
+      -webkit-box-align: center;
       align-items: center;
       background-color:lightblue;
     }
+    
     .main {
       width: 80%;
       max-width: 500px;
@@ -51,7 +56,7 @@
 </head>
 <body>
   <main class="main">
-    <label for="input" class="label">Open data euskadi <span>lortu balizko JSONa</span></label>
+    <label for="input" class="label">Open data euskadi <span>lortu JSON formatu egokian</span></label>
     <input type="text" id="input" class="input" placeholder="Sartu JSON fitxategiaren helbidea">
     <p>... eta segituan jasoko duzu</p>
   </main>
